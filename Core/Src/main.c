@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "mk_dht11.c"
+#include "mk_dht11.h"
 #include "stdio.h"
 
 /* USER CODE END Includes */

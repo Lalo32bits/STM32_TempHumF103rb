@@ -1,4 +1,4 @@
-Core/Src/main.o: ../Core/Src/main.c \
+Core/Src/syscalls.o: ../Core/Src/syscalls.c \
  E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.c \
  E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.h \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
@@ -27,7 +27,6 @@ Core/Src/main.o: ../Core/Src/main.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Core/Inc/main.h \
- E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.h \
  E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.h
 E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.c:
 E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.h:
@@ -57,5 +56,4 @@ E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 ../Core/Inc/main.h:
-E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.h:
 E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.h:

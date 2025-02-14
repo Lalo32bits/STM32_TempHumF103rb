@@ -1,0 +1,4 @@
+E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.c:18:6:init_dht11	24	static
+E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.c:29:6:set_dht11_gpio_mode	32	static
+E:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT/mk_dht11.c:55:9:readDHT11	88	static,ignoring_inline_asm
+../Core/Src/sysmem.c:53:7:_sbrk	32	static

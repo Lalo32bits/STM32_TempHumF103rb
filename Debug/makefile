@@ -62,7 +62,7 @@ main-build: Temp_Hum_uartF103rb.elf secondary-outputs
 
 # Tool invocations
 Temp_Hum_uartF103rb.elf Temp_Hum_uartF103rb.map: $(OBJS) $(USER_OBJS) E:\Eduardo\STM32\Temp_Hum_uartF103rb\STM32F103RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Temp_Hum_uartF103rb.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\Eduardo\STM32\Temp_Hum_uartF103rb\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Temp_Hum_uartF103rb.map" -Wl,--gc-sections -static -L"E:\Eduardo\Gituhub\DHT11-STM32-Library" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "Temp_Hum_uartF103rb.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\Eduardo\STM32\Temp_Hum_uartF103rb\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Temp_Hum_uartF103rb.map" -Wl,--gc-sections -static -L"E:\Eduardo\STM32\Temp_Hum_uartF103rb\Core\Src\DHT" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

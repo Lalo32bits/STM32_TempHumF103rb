@@ -5,5 +5,5 @@
 
 USER_OBJS :=
 
-LIBS := -lE:/Eduardo/Gituhub/DHT11-STM32-Library
+LIBS := -lE:/Eduardo/STM32/Temp_Hum_uartF103rb/Core/Src/DHT
 
