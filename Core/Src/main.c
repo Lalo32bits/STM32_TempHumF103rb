@@ -47,8 +47,8 @@ TIM_HandleTypeDef htim2;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-float temperatura;
-float humedad;
+uint8_t temperatura;
+uint8_t humedad;
 char buffer[50];
 dht11_t dht;
 
@@ -100,6 +100,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+  init_dht11(&dht, &htim2, DHT11_GPIO_Port, DHT11_Pin);
 
   /* USER CODE END 2 */
 
@@ -110,8 +111,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  init_dht11(&dht, &htim2, DHT11_GPIO_Port, DHT11_Pin);
 	  readDHT11(&dht);
+	  temperatura = dht.temperature;
+	  humedad = dht.humidty;
+	  int length = sprintf(buffer,"Temp: %d C, Hum: %d %%\r\n", temperatura, humedad);
+	  HAL_UART_Transmit(&huart2, (uint8_t*)buffer, length, HAL_MAX_DELAY);
+	  HAL_Delay(2000);
   }
   /* USER CODE END 3 */
 }
